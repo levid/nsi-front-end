@@ -1,0 +1,17 @@
+/* Mixins and Supportive Variables */
+@media (max-width: 767px) {
+  #header #topNav .content .logo {
+    display: block;
+    float: none;
+    clear: both; }
+  #header #topNav .content .menu {
+    padding: 5px;
+    margin: 0px auto;
+    display: block;
+    float: none;
+    clear: both;
+    text-align: center; }
+    #header #topNav .content .menu .searchBox input {
+      padding: 5px; }
+  #header #subNav .content .menu .nav-collapse {
+    margin: 5px 0px 0px 0px; } }

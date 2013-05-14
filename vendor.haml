@@ -1,0 +1,536 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/[if gt IE 8]>  <html class="no-js">
+%html
+  %head
+    %title Welcome | Notable Solutions, Inc.
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"}
+    %link{:href => "favicon.jpg", :rel => "icon", :type => "image/jpeg"}
+    %link{:href => "favicon.ico", :rel => "shortcut icon"}
+
+    / For Internet Explorer
+    /[if lt IE 9]<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    / vendor CSS
+    %link{:href => "css/vendor/normalize.min.css", :rel => "stylesheet"}
+    %link{:href => "css/vendor/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "css/vendor/bootstrap-responsive.css", :rel => "stylesheet"}
+    %link{:href => "css/vendor/font-awesome.min.css", :rel => "stylesheet"}
+    %link{:href => "css/vendor/chosen.css", :rel => "stylesheet"}
+
+    /[if IE 7]><link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+    /[if lte IE 7]><script src="lte-ie7.js"></script>
+
+    / app CSS
+    %link{:href => "css/screen.css", :rel => "stylesheet"}
+    %link{:href => "css/vendor.css", :rel => "stylesheet"}
+    %link{:href => "css/bootstrap-overrides.css", :rel => "stylesheet"}
+    %link{:href => "css/media-queries.css", :rel => "stylesheet"}
+
+  %body
+    /[if lt IE 7]
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+
+    #fb-root.fb_reset
+      %div{:style => "position: absolute; top: -10000px; height: 0px; width: 0px;"}
+        %div
+
+    #wrapper
+      %header#header
+        %nav#topNav
+          %section.content.container
+            .menu.pull-right
+              .languageSelect
+                %ul
+                  %li.dropdown.active.blue{:language => "english"}
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      %p English
+                      .lang.en
+                      %b.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => "#"}
+                          .lang.en
+                          English
+                      %li
+                        %a{:href => "#"}
+                          .lang.fr
+                          French
+                      %li
+                        %a{:href => "#"}
+                          .lang.de
+                          German
+                      %li
+                        %a{:href => "#"}
+                          .lang.pt-br
+                          Portugese
+                      %li
+                        %a{:href => "#"}
+                          .lang.es
+                          Spanish
+              .searchBox
+                %form{:action => "/search/"}
+                  %input{:name => "q", :placeholder => "Search", :type => "text"}
+                  %button{:name => "sa", :type => "submit"}
+                    %i.icon-search
+
+            .logo.pull-left
+              %a{:href => '#'}
+                %img{:src => 'img/vendor-logo.png'}
+
+        %nav#subNav.navbar
+          %section.content.container
+            .menu
+              %button.btn.black.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              .nav-collapse.collapse
+                %ul.nav.nav-pills
+                  %li.dropdown.active
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Products
+                      %b.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => '#'} NSi AutoStore
+                      %li
+                        %a{:href => "#"} NSi Smarticket
+                      %li
+                        %a{:href => "#"} NSi Autocapture
+                      %li
+                        %a{:href => "#"} NSi WebCapture
+                      %li
+                        %a{:href => "#"} NSi Mobile
+                      %li
+                        %a{:href => "#"} NSi Quick Capture Pro
+                      %li.dropdown-submenu
+                        %a{:href => '#'} Output Management
+                        %ul.dropdown-menu
+                          %li
+                            %a{:href => '#'} NSi Output Manager
+                          %li
+                            %a{:href => '#'} NSi Secure Print
+                  %li.dropdown
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Sales Support
+                      %b.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => "#"} Supported Devices
+                      %li
+                        %a{:href => "#"} North American Sales Support
+                      %li
+                        %a{:href => "#"} EMEA Sales Support
+                  %li.dropdown
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Education
+                      %b.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => "#"} NSi Product Learning
+                      %li
+                        %a{:href => "#"} NSi Autostore Knowledgebase
+                      %li
+                        %a{:href => "#"} @AutoStore4Ricoh on Twitter
+
+                  %li.dropdown
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Download & Docs
+                      %b.caret
+                    %ul.dropdown-menu
+                      %li
+                        %a{:href => "#"} Software Downloads
+                      %li
+                        %a{:href => "#"} Documentation
+
+                  %li.dropdown
+                    %a{:href => "#"} Simulator
+                  %li.dropdown
+                    %a{:href => "#"} News
+
+        %section#hero
+          %section.content.container
+            %ul.slides
+              %li
+                %a{:href => "http://www.nsimobile.com"}
+                  %img{:alt => "Front Panel Simulator", :src => "http://ricoh.nsiautostore.com/files/2012/02/ricoh-splash.png"}/
+                .heroSlideText
+                  %strong
+                    %span.line1.large NSi AutoStore Simulator
+                    %span.line2.extra-small
+                      For
+                      .symbol.trademark
+                    %span.line3
+                      %img{:src => "http://ricoh.nsiautostore.com/files/2012/02/nsi-logo-ricoh.png"}
+                    %span.line4.large
+                      MFPs
+                  %a.btn.blue{:href => "http://simulator.nsiautostore.com/category/brands/ricoh/"} Learn More
+
+            .slideButtons
+              %ul
+                %li.arrow
+                  %a.prevButton{:href => "#"}
+                    %i.icon-arrow-left
+                %li.circle
+                  %a.active.blue.hideText 1
+                %li.circle
+                  %a.hideText 2
+                %li.circle
+                  %a.hideText 3
+                %li.circle
+                  %a.hideText 4
+                %li.circle
+                  %a.hideText 5
+                %li.arrow
+                  %a.nextButton{:href => "#"}
+                    %i.icon-arrow-right
+
+      %main#main
+        %section#featured
+          %section.content.container
+            .block.featured
+              .image
+                %a{:href => "#"}
+                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/BLI-Homepage-Tile-298x213px.jpg", :alt => "image"}
+              %h3
+                %a{:href => '#'} BLI Winner!
+              %p NSi AutoStore earns BLI rating of 5 out of 5 - again!
+            .block.featured
+              .image
+                %a{:href => "#"}
+                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/Preflight-Homepage-Tiles-298x2131.jpg", :alt => "image"}
+              %h3
+                %a{:href => '#'} Preflight Tool
+              %p Verify your AutoStore 5 config before upgrading to 6
+            .block.featured
+              .image
+                %a{:href => "#"}
+                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/eLearning-Homepage-Tiles-298x2131.jpg", :alt => "image"}
+              %h3
+                %a{:href => '#'} Smarticket 6
+              %p Your document workflow assistant to improve efficiency, collaboration and personalization.
+        %section#twitterFeed
+          %section.content.container
+            %a{:href => '#'}
+              .icon
+                %i.icon-social-twitter
+              %p Hey #NSiMobile users... just wanted to let you know Apple released iOS 6.1 yesterday and NSi Mobile works great as-is. No updates required!
+        %section#news
+          %section.content.container
+            %h1
+              Latest News
+              %i.icon-rss-sign
+            .row-fluid
+              .span8
+                %ul.newsItems
+                  %li
+                    .dateBox
+                      .title Apr
+                      .date 16
+                    .textBox
+                      %h3
+                        %a{:href => '#'} AutoStore 6.0 SharePoint Component Update
+                      %p Today, NSi updated the SharePoint route component for use with AutoStore 6.0 service pack...
+                  %li
+                    .dateBox
+                      .title Apr
+                      .date 9
+                    .textBox
+                      %h3
+                        %a{:href => '#'} AutoStore 6.0 OCR and Professional Bar Code components updated
+                      %p Today, NSi updated the OCR and Professional Bar Code components for use with AutoStore...
+                  %li
+                    .dateBox
+                      .title Apr
+                      .date 4
+                    .textBox
+                      %h3
+                        %a{:href => '#'} NSi and Tulane Featured in Latest Issue of Campus Technology Magazine
+                      %p Today NSi and Tulane University are featured in the cover story of Campus...
+                  %li
+                    .dateBox
+                      .title Apr
+                      .date 3
+                    .textBox
+                      %h3
+                        %a{:href => '#'} Update to Xerox EIP Devices Supported by AutoStore
+                      %p
+                        Today, NSi announced support for the following Xerox devices: WorkCentre&trade; 5845/5855 WorkCentre&trade; 5865/5875/5890 WorkCentr&trade; 7830/7835/7845/7855 ColorQube&trade; 8700
+                        %br Please see...
+                  %li
+                    .dateBox
+                      .title Mar
+                      .date 28
+                    .textBox
+                      %h3
+                        %a{:href => '#'} Notable Solutions Inc. Earns 2013 Kinetic Process Innovation Award
+                      %p NSi AutoStore Recognized for Streamlining Business Processes at Toyota Industries North...
+
+                  %li
+                    .dateBox
+                      .title Apr
+                      .date 3
+                    .textBox
+                      %h3
+                        %a{:href => '#'} Update to Xerox EIP Devices Supported by AutoStore
+                      %p
+                        Today, NSi announced support for the following Xerox devices: WorkCentretrade; 5845/5855 WorkCentretrade; 5865/5875/5890 WorkCentretrade; 7830/7835/7845/7855 ColorQube&trade; 8700
+                        %br
+                        Please see...
+
+                  %li
+                    .dateBox
+                      .title Mar
+                      .date 28
+                    .textBox
+                      %h3
+                        %a{:href => '#'} Notable Solutions Inc. Earns 2013 Kinetic Process Innovation Award
+                      %p NSi AutoStore Recognized for Streamlining Business Processes at Toyota Industries North...
+                    %a.readMore.blue{:href => '#'} Read More News
+
+              .span4
+                .bucket
+                  %h1 Connect With NSi
+                  .content
+                    .socialLinks
+                      %a.youtube{:href => '#'}
+                        %i.icon-social-youtube
+                      %a.twitter{:href => '#'}
+                        %i.icon-social-twitter
+                      %a.linkedin{:href => '#'}
+                        %i.icon-social-linkedin
+                      %a.facebook{:href => '#'}
+                        %i.icon-social-facebook
+                      %a.rss{:href => '#'}
+                        %i.icon-social-rss
+                  .footer.row-fluid
+                    %p Get NSi news delivered to your inbox
+                    %input#mce-email.email.span7{:name => "email", :placeholder => "enter email address", :required => "", :type => "email", :value => ""}
+                    %input#mc-subscribe.btn.black{:name => "subscribe", :type => "submit", :value => "Join"}
+
+                .bucket
+                  %h1
+                    %i.icon-social-rss
+                    Forums
+                  .content
+                    %ul.feedLinks
+                      %li
+                        %a{:href => '#'}
+                          .title Many different Process in the same screen
+                          .date January 11, 2013
+                      %li
+                        %a{:href => '#'}
+                          .title White screen
+                          .date January 9, 2013
+                      %li
+                        %a{:href => '#'}
+                          .title Ricoh ESA Device Manager with new GWNX SDK/J 10.x (MP C3002)
+                          .date January 11, 2013
+                      %li
+                        %a.moreButton{:href => '#'} More
+
+                .bucket
+                  %h1
+                    %i.icon-social-rss
+                    Knowledgebase
+                  .content
+                    %ul.feedLinks
+                      %li
+                        %a{:href => '#'}
+                          .title Server connection Issue Ricoh ESA
+                          .date April 19, 2013
+                      %li
+                        %a{:href => '#'}
+                          .title Ricoh CAP Issues - White Screen and Menu Updates
+                          .date April 18, 2013
+                      %li
+                        %a{:href => '#'}
+                          .title Ricoh USB Keyboard Error - Incompatible USB device
+                          .date March 25, 2013
+                      %li
+                        %a.moreButton{:href => '#'} More
+
+
+
+
+      %footer#footer
+        %section.information
+          %section.content.container
+            .row-fluid
+              .socialShare
+                .shareblock
+                  %ul
+                    %li.first
+                      #___plusone_0{:style => "text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background-position: initial initial; background-repeat: initial initial;"}
+                        %iframe#I0_1368491952963{:allowtransparency => "true", "data-gapiattached" => "true", :frameborder => "0", :hspace => "0", :marginheight => "0", :marginwidth => "0", :name => "I0_1368491952963", :scrolling => "no", :src => "https://apis.google.com/_/+1/fastbutton?bsv&size=medium&hl=en-US&origin=http%3A%2F%2Fricoh.nsiautostore.com&url=http%3A%2F%2Fricoh.nsiautostore.com%2F&ic=1&jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.clbqhjVIEe8.O%2Fm%3D__features__%2Fam%3DIQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTO220kg2S5Jvubfd91Tteymz_15MQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&id=I0_1368491952963&parent=http%3A%2F%2Fricoh.nsiautostore.com&rpctoken=31085478", :style => "position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;", :tabindex => "0", :title => "+1", :vspace => "0", :width => "100%"}
+                    %li.second
+                      %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fricoh.nsiautostore.com%2F&layout=button_count&show_faces=false&action=like&font=verdana&colorscheme=light", :style => "border:none;margin: 0 auto; width: 100px; height: 20px;"}
+                    %li
+                      %iframe.twitter-share-button.twitter-count-horizontal{:allowtransparency => "true", "data-twttr-rendered" => "true", :frameborder => "0", :scrolling => "no", :src => "http://platform.twitter.com/widgets/tweet_button.1368146021.html#_=1368491953098&count=horizontal&id=twitter-widget-0&lang=en&original_referer=http%3A%2F%2Fricoh.nsiautostore.com%2F&size=m&text=NSi%20is%20Once%20Again%20Cycling%20in%20the%20ADA%20Tour%20de%20Cure&url=http%3A%2F%2Fricoh.nsiautostore.com%2F", :style => "width: 107px; height: 20px;", :title => "Twitter Tweet Button"}
+                    %li.last
+                      %span.IN-widget{:style => "line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"}
+                        %span{:style => "padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"}
+                          %span#li_ui_li_gen_1368491953432_0
+                            %a#li_ui_li_gen_1368491953432_0-link{:href => "javascript:void(0);"}
+                              %span#li_ui_li_gen_1368491953432_0-logo in
+                              %span#li_ui_li_gen_1368491953432_0-title
+                                %span#li_ui_li_gen_1368491953432_0-mark
+                                %span#li_ui_li_gen_1368491953432_0-title-text Share
+                        %span{:style => "padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"}
+                          %span#li_ui_li_gen_1368491953458_1-container.IN-right.IN-hidden
+                            %span#li_ui_li_gen_1368491953458_1.IN-right
+                              %span#li_ui_li_gen_1368491953458_1-inner.IN-right
+                                %span#li_ui_li_gen_1368491953458_1-content.IN-right 0
+                      %script{"data-counter" => "right", "data-url" => "http://ricoh.nsiautostore.com/", :type => "in/share+init"}
+            .row-fluid
+              .span2
+                .links
+                  %h4 Products
+                  %ul
+                    %li
+                      %a{:href => "#"} NSi AutoStore
+                    %li
+                      %a{:href => "#"} NSi Smarticker
+                    %li
+                      %a{:href => "#"} NSi AutoCapture
+                    %li
+                      %a{:href => "#"} NSi WebCapture
+                    %li
+                      %a{:href => "#"} NSi Mobile
+                    %li
+                      %a{:href => "#"} NSi QuickCapture Pro
+                    %li
+                      %a{:href => "#"} Output Management
+                      %ul.sub
+                        %li
+                          %a{:href => "#"} NSi Output Manager
+                        %li
+                          %a{:href => "#"} NSi SecurePrint
+              .span2
+                .links
+                  %h4 Sales Support
+                  %ul
+                    %li
+                      %a{:href => "#"} Supported Devices
+                    %li
+                      %a{:href => "#"} North America Sales Support
+                    %li
+                      %a{:href => "#"} EMEA Sales Support
+              .span2
+                .links
+                  %h4 Education
+                  %ul
+                    %li
+                      %a{:href => "#"} NSi Product eLearning
+                    %li
+                      %a{:href => "#"} NSi AutoStore Knowledgebase
+                    %li
+                      %a{:href => "#"} @AutoStore4Ricoh
+              .span2
+                .links
+                  %h4 Downloads & Docs
+                  %ul
+                    %li
+                      %a{:href => "#"} Software Downloads
+                    %li
+                      %a{:href => "#"} Documentation
+              .span2
+                .links
+                  %h4 Simulator
+                  %ul
+                    %li
+                      %a{:href => "#"} Overview
+              .span2
+                .links
+                  %h4 News
+                  %ul
+                    %li
+                      %a{:href => "#"} Overview
+        %section.map
+          %section.content.container
+            .row-fluid
+              .span12
+                .map
+                  %img{:src => "img/map.jpg"}
+                %ul.locations
+                  %li
+                    North America
+                  %li
+                    Latin America
+                  %li
+                    Caribbean
+                  %li
+                    Asia Pacific
+                  %li
+                    Europe
+                  %li
+                    Middle East
+                  %li
+                    Africa
+                %a.btn.blue.contactButton{:href => '#'} Contact NSi
+
+        %section.copyright
+          %section.content.container
+            .row-fluid
+              .span10
+                %p Copyright &#169; 2009 - 2013 Notable Solutions, Inc. All Rights Reserved.
+              .span2
+                .languageSelect.pull-right
+                  %ul
+                    %li.dropdown.dropup.active{:language => "english"}
+                      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                        %p English
+                        .lang.en
+                        %b.caret
+                      %ul.dropdown-menu
+                        %li
+                          %a{:href => "#"}
+                            .lang.en
+                            English
+                        %li
+                          %a{:href => "#"}
+                            .lang.fr
+                            French
+                        %li
+                          %a{:href => "#"}
+                            .lang.de
+                            German
+                        %li
+                          %a{:href => "#"}
+                            .lang.pt-br
+                            Portugese
+                        %li
+                          %a{:href => "#"}
+                            .lang.es
+                            Spanish
+
+    %a#dynamic-to-top{:href => '#top'}
+      %i.icon-angle-up
+
+    / :javascript
+    /   document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+    / <noscript><p class="noscript">Please enable javascript in order to experience this site.</p></div></noscript>
+    / vendor js libs
+    %script{:src => "js/vendor/modernizr-2.6.2.min.js"}
+    %script{:src => "js/vendor/jquery-1.9.1.min.js"}
+    %script{:src => "js/vendor/jquery.easing.1.3.js"}
+    %script{:src => "js/vendor/chosen.jquery.min.js", :type => "text/javascript"}
+    %script{:src => "js/vendor/bootstrap.min.js", :type => "text/javascript"}
+
+    %script{:src => "http://connect.facebook.net/en_US/all.js", :type => "text/javascript"}
+    / the app itself
+    %script{:src => "js/app.js"}
+    / create App() instance on page load complete
+    :javascript
+      $(window).load(function(){
+        var nsiApp = new NSI({
+
+        });
+      });

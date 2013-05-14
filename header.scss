@@ -1,0 +1,304 @@
+// Header styles
+header#header {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  // Top Navigation styles
+  nav#topNav {
+    width: 100%;
+    height: auto;
+    min-height: 92px;
+    display: block;
+    @include box-shadow(0px 4px 8px 0px rgba(0, 0, 0, .1));
+    position: relative;
+    z-index: 1;
+
+    // This is the responsive container for the nav content
+    .content { height: 100%;}
+
+    // Menu styles
+    .menu {
+      width: auto;
+      margin: 14px auto;
+      padding: 10px 10px 10px 20px;
+      background-color: #f9f9f9;
+      @include border-radius(10px);
+      display: inline-block;
+
+      // Language Selector
+      .languageSelect {
+        padding: 0px 5px 0px 0px;
+        display: inline-block;
+
+        ul {
+          margin: 0px;
+          list-style: none;
+          text-align: left;
+
+          li {
+            div {
+              display: inline-block;
+            }
+
+            a {
+              p {
+                margin: 0px;
+                display: inline-block;
+                color: #3c3c3c;
+                vertical-align: top;
+              }
+
+              i {
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+
+      // Search box
+      .searchBox {
+        display: inline-block;
+
+        form {
+          margin: 0px;
+          padding: 0px;
+          height: auto;
+        }
+
+        input {
+          margin: 0px;
+          padding: 10px;
+          color: #7d7d7d;
+          font-family: ProximaNovaSemibold;
+          font-size: 1em;
+          border: 1px solid #dedede;
+          @include border-radius(7px);
+        }
+
+        a, button {
+          margin: 13px 0px 0px -25px;
+          border: none;
+          outline: none;
+          vertical-align: top;
+          color: #7d7d7d;
+          position: relative;
+          left: -10px;
+        }
+      }
+    }
+  }
+
+  // Sub navigation styles
+  nav#subNav {
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    background-color: #efefef;
+    display: block;
+
+    // This is the responsive container for the nav content
+    .content {
+      height: 100%;
+    }
+    .nav {
+      min-height: 40px;
+
+      li {
+        &.dropdown {
+          min-height: 40px;
+
+          a.dropdown-toggle {
+            &:hover {
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Hero styles
+  #hero {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #161616;
+    display: block;
+
+    // This is the responsive container for the nav content
+    .content {
+      height: 390px;
+      position: relative;
+      margin: 0px auto;
+      padding: 0;
+      overflow: hidden;
+
+      ul {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+
+      ul.slides {
+        height: auto;
+
+        .heroSlideText {
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          font-family: ProximaNovaRegular;
+          font-size: 1.3em;
+          padding-top: 110px;
+          padding-left: 29px;
+          padding-right: 60px;
+          line-height: 1.3em;
+          color: #ffffff;
+          background: rgba(0,0,0,.15);
+          text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+
+          a {
+            margin: 10px 0px 0px 0px;
+            text-transform: uppercase;
+
+            &.btn {
+              padding: 10px 15px 10px 15px;
+            }
+          }
+
+          span {
+            margin: 0px;
+            padding: 0px;
+            display: block;
+            font-family: ProximaNovaRegular;
+
+            &.bold {
+              font-family: ProximaNovaBold;
+            }
+
+            &.large {
+              font-size: 2em;
+            }
+
+            &.medium {
+              font-size: 1.5em;
+            }
+
+            &.small {
+              font-size: 1.1em;
+            }
+
+            &.extra-small {
+              font-size: 0.8em;
+            }
+
+            &.line1 {
+
+            }
+            &.line2 {
+              margin: 5px 0px 0px 0px;
+
+            }
+            &.line3 {
+              margin: 10px 0px 0px 0px;
+
+            }
+            &.line4 {
+              margin: 15px 0px 0px 0px;
+            }
+          }
+        }
+      }
+
+      // Slide Buttons
+      .slideButtons {
+        margin: -40px auto;
+        width: auto;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: center;
+
+        // Circle Buttons
+        ul {
+          width: auto;
+          height: auto;
+          margin: 0 auto;
+          padding: 0;
+          list-style: none;
+          display: inline-block;
+
+          li + li {
+            margin: 0 0 0 10px;
+          }
+
+          li.arrow {
+            width: auto;
+            float: left;
+
+            a {
+              &.prevButton, &.nextButton {
+                width: auto;
+                height: auto;
+                display: inline-block;
+                color: rgba(255,255,255, 0.5);
+                font-size: 20px;
+
+                &:hover {
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+
+          li.circle {
+            width: auto;
+            float: left;
+
+            a {
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              background-color: rgba(255,255,255, 0.5);
+              @include border-radius(50px);
+              cursor: pointer;
+              border: 2px solid rgba(255,255,255, 0);
+
+              &:hover {
+                background-color: rgba(255,255,255, 0.9);
+              }
+
+              &.active {
+                border: 2px solid #ffffff;
+
+                &.red {
+                  background-color: #b5111c;
+
+                  &:hover {
+                    background-color: #ea2739;
+                  }
+                }
+
+                &.blue {
+                  background-color: #164b91;
+
+                  &:hover {
+                    background-color: #1b87c4;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+    }
+  }
+}

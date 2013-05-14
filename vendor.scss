@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@import "mixins";
+
+// Header styles
+header#header {
+  #hero {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #161616;
+    display: block;
+
+    // This is the responsive container for the nav content
+    .content {
+      height: 260px;
+      position: relative;
+      margin: 0px auto;
+      padding: 0;
+      overflow: hidden;
+
+      ul {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+
+      ul.slides {
+        height: auto;
+
+        .heroSlideText {
+          height: 100%;
+          position: absolute;
+          top: 0px;
+          font-family: ProximaNovaRegular;
+          font-size: 1.3em;
+          padding-top: 45px;
+          padding-left: 29px;
+          padding-right: 60px;
+          line-height: 1.3em;
+          color: #ffffff;
+          background: rgba(0,0,0,.15);
+          text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+
+          a {
+            margin: 15px 0px 0px 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#main {
+  #featured {
+    .content {
+      .block.featured {
+        h3 {
+          a {
+            &:hover {
+              color: #1966b2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #news {
+    ul.newsItems {
+      li {
+        .dateBox {
+          background-color: #05427d;
+
+          .title {
+            background-color: #1966b2;
+          }
+        }
+
+        .textBox {
+          h3 {
+            a {
+              &:hover {
+                color: #1966b2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

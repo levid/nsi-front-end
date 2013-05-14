@@ -1,0 +1,17 @@
+@import "header";
+@import "footer";
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.standardWidth {
+  margin: 0px auto;
+  width: 940px;
+}
+
+.center {
+  margin: 0px auto;
+  text-align: center;
+}
