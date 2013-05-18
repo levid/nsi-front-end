@@ -7,7 +7,7 @@ footer#footer {
     border-bottom: 1px solid #f2f0f0;
 
     .content {
-      padding: 10px 0px 20px 0px;
+      padding: 20px 0px 20px 0px;
 
       .socialLinks {
         a {
@@ -62,13 +62,7 @@ footer#footer {
         }
       }
 
-      .location + .location {
-        margin-left: 40px;
-      }
-
       .location {
-        width: auto;
-        max-width: 170px;
         height: auto;
         display: inline-block;
         vertical-align: top;
