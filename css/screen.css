@@ -57,6 +57,10 @@ body {
 .align.left {
   text-align: left; }
 
+.socialLinks .text {
+  margin: 0px 0px 10px 0px;
+  font-family: ProximaNovaSemibold;
+  font-size: 1.5em; }
 .socialLinks a {
   width: auto;
   height: auto;
@@ -122,6 +126,34 @@ body {
     background-image: url("../img/lang/pt-br.png");
     background-position: top left;
     background-repeat: no-repeat; }
+
+.searchBox {
+  display: inline-block; }
+  .searchBox form {
+    margin: 0px;
+    padding: 0px;
+    height: auto; }
+  .searchBox input {
+    margin: 0px;
+    padding: 10px;
+    color: #7d7d7d;
+    font-family: ProximaNovaSemibold;
+    font-size: 1em;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px; }
+  .searchBox a, .searchBox button {
+    margin: 13px 0px 0px -25px;
+    border: none;
+    outline: none;
+    vertical-align: top;
+    color: #7d7d7d;
+    position: relative;
+    left: -10px; }
 
 .sidebar .bucket + .bucket {
   margin-top: 20px; }
@@ -194,6 +226,9 @@ body {
           font-family: ProximaNovaSemibold;
           color: #6f6f6f; }
         .sidebar .bucket .content ul.feedLinks li a {
+          width: 100%;
+          height: auto;
+          display: block;
           color: #1966b2; }
           .sidebar .bucket .content ul.feedLinks li a:hover {
             color: #000000; }
@@ -553,33 +588,6 @@ header#header {
             vertical-align: top; }
           header#header nav#topNav .menu .languageSelect ul li a i {
             color: #000000; }
-      header#header nav#topNav .menu .searchBox {
-        display: inline-block; }
-        header#header nav#topNav .menu .searchBox form {
-          margin: 0px;
-          padding: 0px;
-          height: auto; }
-        header#header nav#topNav .menu .searchBox input {
-          margin: 0px;
-          padding: 10px;
-          color: #7d7d7d;
-          font-family: ProximaNovaSemibold;
-          font-size: 1em;
-          border: 1px solid #dedede;
-          -webkit-border-radius: 7px;
-          -khtml-border-radius: 7px;
-          -moz-border-radius: 7px;
-          -ms-border-radius: 7px;
-          -o-border-radius: 7px;
-          border-radius: 7px; }
-        header#header nav#topNav .menu .searchBox a, header#header nav#topNav .menu .searchBox button {
-          margin: 13px 0px 0px -25px;
-          border: none;
-          outline: none;
-          vertical-align: top;
-          color: #7d7d7d;
-          position: relative;
-          left: -10px; }
   header#header nav#subNav {
     width: 100%;
     height: auto;
@@ -1055,3 +1063,5 @@ main#sub section#subContent {
       margin: 25px 0px 0px 0px;
       height: 50px;
       display: block; }
+    main#sub section#subContent .content .sidebar .searchBox {
+      margin: 10px; }

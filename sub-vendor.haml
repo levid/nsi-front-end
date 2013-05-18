@@ -41,7 +41,7 @@
             .menu.pull-right
               .languageSelect
                 %ul
-                  %li.dropdown.active{:language => "english"}
+                  %li.dropdown.active.blue{:language => "english"}
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                       %p English
                       .lang.en
@@ -75,7 +75,7 @@
 
             .logo.pull-left
               %a{:href => '#'}
-                %img{:src => 'img/nsi-logo-dark-header.png'}
+                %img{:src => 'img/vendor-logo.png'}
 
         %nav#subNav.navbar
           %section.content.container
@@ -91,43 +91,18 @@
                       Products
                       %b.caret
                     %ul.dropdown-menu
-                      %li.dropdown-submenu
+                      %li
                         %a{:href => '#'} NSi AutoStore
-                        %ul.dropdown-menu
-                          %li.dropdown-submenu
-                            %a{:href => '#'} Capture
-                            %ul.dropdown-menu
-                              %li
-                                %a{:href => '#'} Supported Devices
-                          %li
-                            %a{:href => '#'} Process
-                          %li.dropdown-submenu
-                            %a{:href => '#'} Route
-                            %ul.dropdown-menu
-                              %li
-                                %a{:href => '#'} Document Management Systems
-                              %li
-                                %a{:href => '#'} File, Fax and Email Services
-                              %li
-                                %a{:href => '#'} Groupware & Collaboration
-                              %li
-                                %a{:href => '#'} Open Connectivity
                       %li
-                        %a{:href => "#"} NSi AutoStore for SAP
-                      %li
-                        %a{:href => "#"} NSi Mobile
+                        %a{:href => "#"} NSi Smarticket
                       %li
                         %a{:href => "#"} NSi Autocapture
                       %li
                         %a{:href => "#"} NSi WebCapture
                       %li
-                        %a{:href => "#"} NSi Smarticket
+                        %a{:href => "#"} NSi Mobile
                       %li
                         %a{:href => "#"} NSi Quick Capture Pro
-                      %li
-                        %a{:href => "#"} NSi OpenForms 360
-                      %li
-                        %a{:href => "#"} NSi Autocapture
                       %li.dropdown-submenu
                         %a{:href => '#'} Output Management
                         %ul.dropdown-menu
@@ -137,91 +112,41 @@
                             %a{:href => '#'} NSi Secure Print
                   %li.dropdown
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      Industries
+                      Sales Support
                       %b.caret
                     %ul.dropdown-menu
-                      %li
-                        %a{:href => "#"} Overview
-                      %li
-                        %a{:href => "#"} Construction
-                      %li
-                        %a{:href => "#"} Education
-                      %li
-                        %a{:href => "#"} Financial Services
-                      %li.dropdown-submenu
-                        %a{:href => '#'} Government
-                        %ul.dropdown-menu
-                          %li
-                            %a{:href => '#'} U.S. Federal Government
-                      %li
-                        %a{:href => "#"} Human Resources
-                      %li
-                        %a{:href => "#"} Legal
-                      %li
-                        %a{:href => "#"} Logistics
-                      %li
-                        %a{:href => "#"} Healthcare
-                  %li.dropdown
-                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      Services
-                      %b.caret
-                    %ul.dropdown-menu
-                      %li
-                        %a{:href => "#"} Overview
-                      %li.dropdown-submenu
-                        %a{:href => '#'} Training
-                        %ul.dropdown-menu
-                          %li
-                            %a{:href => '#'} Classroom
-                          %li
-                            %a{:href => '#'} eLearning
-
-                  %li.dropdown
-                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      Support
-                      %b.caret
-                    %ul.dropdown-menu
-                      %li
-                        %a{:href => "#"} Overview
-                      %li
-                        %a{:href => "#"} Downloads
-                      %li
-                        %a{:href => "#"} Forums
-                      %li
-                        %a{:href => "#"} Knowledge Base
-                      %li
-                        %a{:href => "#"} Notices
-                      %li
-                        %a{:href => "#"} Preflight Tool
-                      %li
-                        %a{:href => "#"} Remote Assistance
-                      %li
-                        %a{:href => "#"} Support Hours
                       %li
                         %a{:href => "#"} Supported Devices
-
-                  %li.dropdown
-                    %a{:href => "#"} News
-
+                      %li
+                        %a{:href => "#"} North American Sales Support
+                      %li
+                        %a{:href => "#"} EMEA Sales Support
                   %li.dropdown
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                      About NSi
+                      Education
                       %b.caret
                     %ul.dropdown-menu
                       %li
-                        %a{:href => "#"} Overview
+                        %a{:href => "#"} NSi Product Learning
                       %li
-                        %a{:href => "#"} Leadership Team
+                        %a{:href => "#"} NSi Autostore Knowledgebase
                       %li
-                        %a{:href => "#"} Board Members
+                        %a{:href => "#"} @AutoStore4Ricoh on Twitter
+
+                  %li.dropdown
+                    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                      Download & Docs
+                      %b.caret
+                    %ul.dropdown-menu
                       %li
-                        %a{:href => "#"} Calendar
+                        %a{:href => "#"} Software Downloads
                       %li
-                        %a{:href => "#"} Careers
-                      %li
-                        %a{:href => "#"} Contact
-                      %li
-                        %a{:href => "#"} NSi Core Values
+                        %a{:href => "#"} Documentation
+
+                  %li.dropdown
+                    %a{:href => "#"} Simulator
+                  %li.dropdown
+                    %a{:href => "#"} News
       %main#sub
         %section#subTitle
           %section.content.container
@@ -258,6 +183,8 @@
                   %p
                     Thank you in advance for your generosity!
                 .socialLinks
+                  .text
+                    Share
                   %a.youtube{:href => '#'}
                     %i.icon-social-youtube
                   %a.twitter{:href => '#'}
@@ -300,6 +227,40 @@
 
               .sidebar.span4
                 .bucket
+                  %h1
+                    Archives
+                  .content
+                    .searchBox
+                      %form{:action => "/search/"}
+                        %input{:name => "q", :placeholder => "Search", :type => "text"}
+                        %button{:name => "sa", :type => "submit"}
+                          %i.icon-search
+
+                .bucket
+                  %h1
+                    Categories
+                  .content
+                    %ul.feedLinks
+                      %li
+                        %a{:href => '#'}
+                          .title Announcements
+                      %li
+                        %a{:href => '#'}
+                          .title Marketing
+                      %li
+                        %a{:href => '#'}
+                          .title Quick Tips
+                      %li
+                        %a{:href => '#'}
+                          .title Sales
+                      %li
+                        %a{:href => '#'}
+                          .title Tech Notes
+                      %li
+                        %a{:href => '#'}
+                          .title Uncategorized
+
+                .bucket
                   %h1 Connect With NSi
                   .content
                     .socialLinks
@@ -317,50 +278,6 @@
                     %p Get NSi news delivered to your inbox
                     %input#mce-email.email.span7{:name => "email", :placeholder => "enter email address", :required => "", :type => "email", :value => ""}
                     %input#mc-subscribe.btn.black{:name => "subscribe", :type => "submit", :value => "Join"}
-
-                .bucket
-                  %h1
-                    %i.icon-social-rss
-                    Forums
-                  .content
-                    %ul.feedLinks
-                      %li
-                        %a{:href => '#'}
-                          .title Many different Process in the same screen
-                          .date January 11, 2013
-                      %li
-                        %a{:href => '#'}
-                          .title White screen
-                          .date January 9, 2013
-                      %li
-                        %a{:href => '#'}
-                          .title Ricoh ESA Device Manager with new GWNX SDK/J 10.x (MP C3002)
-                          .date January 11, 2013
-                      %li
-                        %a.moreButton{:href => '#'} More
-
-                .bucket
-                  %h1
-                    %i.icon-social-rss
-                    Knowledgebase
-                  .content
-                    %ul.feedLinks
-                      %li
-                        %a{:href => '#'}
-                          .title Server connection Issue Ricoh ESA
-                          .date April 19, 2013
-                      %li
-                        %a{:href => '#'}
-                          .title Ricoh CAP Issues - White Screen and Menu Updates
-                          .date April 18, 2013
-                      %li
-                        %a{:href => '#'}
-                          .title Ricoh USB Keyboard Error - Incompatible USB device
-                          .date March 25, 2013
-                      %li
-                        %a.moreButton{:href => '#'} More
-
-
 
       %footer#footer
         %section.information

@@ -56,37 +56,6 @@ header#header {
           }
         }
       }
-
-      // Search box
-      .searchBox {
-        display: inline-block;
-
-        form {
-          margin: 0px;
-          padding: 0px;
-          height: auto;
-        }
-
-        input {
-          margin: 0px;
-          padding: 10px;
-          color: #7d7d7d;
-          font-family: ProximaNovaSemibold;
-          font-size: 1em;
-          border: 1px solid #dedede;
-          @include border-radius(7px);
-        }
-
-        a, button {
-          margin: 13px 0px 0px -25px;
-          border: none;
-          outline: none;
-          vertical-align: top;
-          color: #7d7d7d;
-          position: relative;
-          left: -10px;
-        }
-      }
     }
   }
 
