@@ -18,14 +18,14 @@ class NSI
     # Extend default options to include passed in arguments
     @options = $.extend({}, this.opts, @options)
 
-    console.log "---Instantiating App---"
+    # console.log "---Instantiating App---"
 
-    $("ul.nav li.dropdown").hover (->
-      # $(this).find(".dropdown-menu:first-child").stop(true, true).show()
-      $(this).addClass "open"
-    ), ->
-      # $(this).find(".dropdown-menu:first-child").stop(true, true).hide()
-      $(this).removeClass "open"
+    # $("ul.nav li.dropdown").hover (->
+    #   # $(this).find(".dropdown-menu:first-child").stop(true, true).show()
+    #   $(this).addClass "open"
+    # ), ->
+    #   # $(this).find(".dropdown-menu:first-child").stop(true, true).hide()
+    #   $(this).removeClass "open"
 
 
     # $(window).load ->

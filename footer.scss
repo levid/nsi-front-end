@@ -53,7 +53,7 @@ footer#footer {
           a {
             color: #6f6f6f;
             font-size: 0.9em;
-            font-family: ProximaNovaSemibold;
+            font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
             &:hover {
               color: #000000;
@@ -66,7 +66,7 @@ footer#footer {
         height: auto;
         display: inline-block;
         vertical-align: top;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
         h4 {
           font-size: 1.3em;
@@ -85,7 +85,7 @@ footer#footer {
         width: auto;
         display: inline-block;
         vertical-align: top;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
         h4 {
           font-size: 1em;
@@ -131,6 +131,7 @@ footer#footer {
           color: #000000;
           @include border-radius(10px);
           font-size: 3em;
+          display: inline-block;
 
           &:hover {
             background-color: darken(#eeeeee, 10%);
@@ -138,7 +139,7 @@ footer#footer {
         }
 
         p {
-          font-family: ProximaNovaSemibold;
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           margin: 15px 0px 0px 0px;
           font-size: .9em;
         }
@@ -147,7 +148,7 @@ footer#footer {
   }
 
   // Footer map
-  .map {
+  #map {
     margin: 10px 0px 10px 0px;
 
     .map {
@@ -167,7 +168,7 @@ footer#footer {
       }
 
       li {
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         font-size: 1.2em;
         display: inline-block;
         color: #6f6f6f;
@@ -189,13 +190,14 @@ footer#footer {
     background-color: #3c3c3c;
 
     p {
-      font-family: ProximaNovaSemibold;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       margin: 17px 0px 0px 0px;
       color: #bfbfbf;
     }
 
     // Language Selector
     .languageSelect {
+      width: 120px;
       padding: 0px 15px 0px 15px;
       display: inline-block;
       background-color: #292929;
@@ -210,6 +212,10 @@ footer#footer {
         li {
           div {
             display: inline-block;
+          }
+
+          .lang {
+            margin: 4px 0px 0px 0px;
           }
 
           a {

@@ -4,6 +4,10 @@
 
 // Header styles
 header#header {
+  width: 100%;
+  height: auto;
+  display: block;
+
   #hero {
     margin: 0px;
     padding: 0px;
@@ -15,11 +19,11 @@ header#header {
 
     // This is the responsive container for the nav content
     .content {
-      height: 260px;
+      height: auto;
       position: relative;
       margin: 0px auto;
       padding: 0;
-      overflow: hidden;
+      display: block;
 
       ul {
         width: auto;
@@ -31,20 +35,25 @@ header#header {
 
       ul.slides {
         height: auto;
+        overflow: hidden;
 
         .heroSlideText {
           height: 100%;
-          position: absolute;
-          top: 0px;
-          font-family: ProximaNovaRegular;
+          font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           font-size: 1.3em;
-          padding-top: 45px;
-          padding-left: 29px;
-          padding-right: 60px;
+          padding: 0px;
           line-height: 1.3em;
           color: #ffffff;
           background: rgba(0,0,0,.15);
           text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+          top: 0px;
+          position: absolute;
+          display: table-cell;
+          vertical-align: middle;
+
+          .content {
+            padding: 38px 60px 0px 29px;
+          }
 
           a {
             margin: 15px 0px 0px 0px;

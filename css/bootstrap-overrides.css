@@ -1,14 +1,17 @@
 /* Mixins and Supportive Variables */
 .navbar {
   margin-bottom: 0px; }
+  .navbar .btn-navbar {
+    float: left;
+    margin: 10px; }
   .navbar .nav li.dropdown:hover > ul.dropdown-menu {
     display: block; }
   .navbar .nav li.dropdown ul.dropdown-menu {
     margin-top: 0; }
   .navbar .nav li.dropdown.active .dropdown-toggle {
     margin: 0px;
-    padding: 12px 15px 10px;
-    height: 17px;
+    padding: 12px 15px 13px 15px;
+    height: auto;
     background: #ffffff;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -20,7 +23,9 @@
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     border-radius: 0px;
-    color: #b6121c; }
+    behavior: url(pie/PIE.htc);
+    color: #b6121c;
+    display: inline-block; }
     .navbar .nav li.dropdown.active .dropdown-toggle .caret {
       border-top-color: #b6121c;
       border-bottom-color: #b6121c; }

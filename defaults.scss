@@ -1,26 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+
+  /* apply a natural box layout model to all elements */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a:link,
 a:hover,
 a:active,
 a:visited
 {
-  text-decoration:none !important;
-  white-space: normal;
-  background: none;
+    white-space: normal;
+    background: none;
+    text-decoration: none !important;
 }
 a, button, i
 {
-  outline: none !important;
-  background: none;
+    outline: none !important;
+    background: none;
 
-  @include transition(all .1s linear);
-
-  &:hover {
     @include transition(all .1s linear);
-  }
+
+    &:hover {
+      @include transition(all .1s linear);
+    }
 }
 
 html, button, input, select, textarea, p {
-  font-family: ProximaNovaSemibold;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+  outline: none !important;
+}
+
+input[type=text] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
@@ -70,7 +88,7 @@ body {
 .socialLinks {
   .text {
     margin: 0px 0px 10px 0px;
-    font-family: ProximaNovaSemibold;
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: 1.5em;
   }
 
@@ -138,7 +156,7 @@ body {
   height: 12px;
 
   &.en {
-    @include background($path + 'lang/en.png', no-repeat, top left, transparent);
+    @include background($path + 'lang/us.png', no-repeat, top left, transparent);
   }
   &.fr {
     @include background($path + 'lang/fr.png', no-repeat, top left, transparent);
@@ -150,7 +168,7 @@ body {
     @include background($path + 'lang/es.png', no-repeat, top left, transparent);
   }
   &.pt-br {
-    @include background($path + 'lang/pt-br.png', no-repeat, top left, transparent);
+    @include background($path + 'lang/pt.png', no-repeat, top left, transparent);
   }
 }
 
@@ -166,22 +184,24 @@ body {
 
   input {
     margin: 0px;
-    padding: 10px;
+    padding: 15px 8px 15px 8px;
     color: #7d7d7d;
-    font-family: ProximaNovaSemibold;
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: 1em;
     border: 1px solid #dedede;
     @include border-radius(7px);
   }
 
   a, button {
-    margin: 13px 0px 0px -25px;
+    margin: 8px 0px 0px -15px;
     border: none;
     outline: none;
     vertical-align: top;
     color: #7d7d7d;
     position: relative;
-    left: -10px;
+    display: inline-block;
+    right: 10px;
+    z-index: 5;
   }
 }
 
@@ -191,6 +211,7 @@ body {
   }
 
   .bucket {
+    min-width: 250px;
     margin: 0px;
     @include border-radius(10px);
     border: 1px solid #ebebeb;
@@ -200,13 +221,13 @@ body {
       margin: 0px;
       background-color: #ddecf6;
       border-bottom: 1px solid #b4d4e9;
-      font-family: ProximaNovaSemibold;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       font-size: 1.5em;
       font-weight: 300;
       @include border-radius(10px 10px 0px 0px);
     }
 
-    .content {
+    .contents {
       background-color: #f9f9f9;
 
       img {
@@ -215,7 +236,7 @@ body {
 
       p {
         margin: 10px 0px 10px 0px;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         color: #6f6f6f;
       }
 
@@ -254,11 +275,11 @@ body {
           }
 
           .title {
-            font-family: ProximaNovaSemibold;
+            font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           }
 
           .date {
-            font-family: ProximaNovaSemibold;
+            font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
             color: #6f6f6f;
           }
 
@@ -277,7 +298,7 @@ body {
             width: 100%;
             height: 100%;
             border: none;
-            font-family: ProximaNovaSemibold;
+            font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
             text-transform: uppercase;
             display: inline-block;
             color: #000000;
@@ -295,6 +316,10 @@ body {
 
       input {
         margin: 0px;
+
+        &.email {
+          padding: 15px 8px 15px 8px;
+        }
       }
     }
 
@@ -312,7 +337,7 @@ body {
 
       li {
         float: left;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         font-weight: 300;
 
         a {
@@ -342,8 +367,8 @@ body {
 
 #dynamic-to-top {
   overflow: hidden;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   z-index: 90;
   position: fixed;
   bottom: 20px;
@@ -353,20 +378,23 @@ body {
   font-size: 2em;
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 0px;
   border: 1px solid #000;
   background: #272727;
   display: inline-block;
   @include border-radius(30px);
 
   i {
+    margin: 0px;
+    padding: 0px;
     position: relative;
-    top: -5px;
+    top: 3px;
+    left: 10px;
   }
 
   &:hover {
     color: #ffffff;
-    @include background-gradient(#616264, #333333, #616264);
+    @include background-gradient(#525355, #2a2a2b, #525355);
   }
 }
 
@@ -401,7 +429,7 @@ a.readMore {
 }
 
 .btn {
-  font-family: ProximaNovaSemibold;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   font-size: 1em;
 
   &.blue {

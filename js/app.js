@@ -9,12 +9,6 @@
     function NSI(options) {
       this.options = options;
       this.options = $.extend({}, this.opts, this.options);
-      console.log("---Instantiating App---");
-      $("ul.nav li.dropdown").hover((function() {
-        return $(this).addClass("open");
-      }), function() {
-        return $(this).removeClass("open");
-      });
     }
 
     NSI.prototype.initFlexslider = function() {

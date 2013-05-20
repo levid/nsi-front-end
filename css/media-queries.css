@@ -1,17 +1,100 @@
 /* Mixins and Supportive Variables */
-@media (max-width: 767px) {
-  #header #topNav .content .logo {
-    display: block;
-    float: none;
-    clear: both; }
-  #header #topNav .content .menu {
-    padding: 5px;
-    margin: 0px auto;
-    display: block;
-    float: none;
-    clear: both;
-    text-align: center; }
-    #header #topNav .content .menu .searchBox input {
-      padding: 5px; }
+@media only screen and (max-width : 980px) {
+  footer#footer #map .map {
+    display: none; }
+  footer#footer #map ul.locations {
+    display: none; }
+  footer#footer #map a.contactButton {
+    margin: 0px; } }
+@media only screen and (max-width : 770px) {
+  #header #topNav .content {
+    padding: 0px; }
+    #header #topNav .content .logo {
+      display: block;
+      float: none;
+      clear: both;
+      text-align: center; }
+    #header #topNav .content .menu {
+      padding: 5px;
+      margin: 0px auto;
+      display: block;
+      float: none;
+      clear: both;
+      text-align: center; }
+      #header #topNav .content .menu .searchBox input {
+        margin: 0px;
+        padding: 15px 8px 15px 8px;
+        color: #7d7d7d; }
+      #header #topNav .content .menu .searchBox a, #header #topNav .content .menu .searchBox button {
+        margin: 8px 0px 0px -15px;
+        border: none;
+        outline: none;
+        vertical-align: top;
+        color: #7d7d7d;
+        position: relative;
+        display: inline-block;
+        right: 10px;
+        z-index: 5; }
   #header #subNav .content .menu .nav-collapse {
-    margin: 5px 0px 0px 0px; } }
+    margin: 5px 0px 0px 0px; }
+
+  footer#footer #map .map {
+    display: none; }
+  footer#footer #map ul.locations {
+    display: none; }
+  footer#footer #map a.contactButton {
+    margin: 0px; }
+
+  .sidebar .bucket .footer {
+    padding: 10px; }
+    .sidebar .bucket .footer input {
+      width: auto; }
+
+  header#header #hero .content ul.slides {
+    min-height: 250px; }
+    header#header #hero .content ul.slides .heroSlideText .content {
+      padding-top: 20px;
+      font-size: 80%; }
+      header#header #hero .content ul.slides .heroSlideText .content .btn {
+        padding: 5px 10px 5px 10px;
+        font-size: 80%; }
+
+  .searchBox button {
+    margin: 6px 0px 0px -25px; }
+
+  .content {
+    padding: 0px 20px 0px 20px; }
+
+  footer#footer .information .content {
+    padding: 20px; }
+
+  footer#footer .copyright {
+    text-align: center; }
+    footer#footer .copyright .languageSelect {
+      margin: 10px auto;
+      width: 100%;
+      padding: 0px;
+      text-align: center; }
+      footer#footer .copyright .languageSelect ul:first-child {
+        width: auto;
+        display: inline-block; }
+
+  footer#footer .information .content .contactButton {
+    margin: 20px 0px 0px 0px;
+    float: left; }
+
+  main#main #news ul.newsItems li .textBox {
+    width: 70%; }
+
+  main#sub section#breadcrumb .content {
+    padding: 20px 20px 13px 20px; }
+
+  main#main #featured .content .featured + .featured {
+    margin: 20px 0 0 0; }
+  main#main #featured .content .featured {
+    padding: 0px 20px 0px 20px; }
+    main#main #featured .content .featured .image {
+      margin: 0px auto;
+      width: 100%; }
+  main#main #news .sidebar {
+    padding: 20px 0px 20px 0px; } }

@@ -1,41 +1,48 @@
 /* Mixins and Supportive Variables */
-header#header #hero {
-  margin: 0px;
-  padding: 0px;
+header#header {
   width: 100%;
   height: auto;
-  display: block;
-  background-color: #161616;
   display: block; }
-  header#header #hero .content {
-    height: 260px;
-    position: relative;
-    margin: 0px auto;
-    padding: 0;
-    overflow: hidden; }
-    header#header #hero .content ul {
-      width: auto;
+  header#header #hero {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #161616;
+    display: block; }
+    header#header #hero .content {
       height: auto;
-      margin: 0px;
-      padding: 0px;
-      list-style: none; }
-    header#header #hero .content ul.slides {
-      height: auto; }
-      header#header #hero .content ul.slides .heroSlideText {
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        font-family: ProximaNovaRegular;
-        font-size: 1.3em;
-        padding-top: 45px;
-        padding-left: 29px;
-        padding-right: 60px;
-        line-height: 1.3em;
-        color: #ffffff;
-        background: rgba(0, 0, 0, 0.15);
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
-        header#header #hero .content ul.slides .heroSlideText a {
-          margin: 15px 0px 0px 0px; }
+      position: relative;
+      margin: 0px auto;
+      padding: 0;
+      display: block; }
+      header#header #hero .content ul {
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+      header#header #hero .content ul.slides {
+        height: auto;
+        overflow: hidden; }
+        header#header #hero .content ul.slides .heroSlideText {
+          height: 100%;
+          font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+          font-size: 1.3em;
+          padding: 0px;
+          line-height: 1.3em;
+          color: #ffffff;
+          background: rgba(0, 0, 0, 0.15);
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+          top: 0px;
+          position: absolute;
+          display: table-cell;
+          vertical-align: middle; }
+          header#header #hero .content ul.slides .heroSlideText .content {
+            padding: 38px 60px 0px 29px; }
+          header#header #hero .content ul.slides .heroSlideText a {
+            margin: 15px 0px 0px 0px; }
 
 #main #featured .content .block.featured h3 a:hover {
   color: #1966b2; }

@@ -1,9 +1,11 @@
 !!!
-/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
-/[if IE 8] <html class="no-js lt-ie9">
-/[if gt IE 8]  <html class="no-js">
-%html
+/[if lt IE 7 ] <html lang="en" class="ie6">
+/[if IE 7 ] <html lang="en" class="ie7">
+/[if IE 8 ] <html lang="en" class="ie8">
+/[if IE 9 ] <html lang="en" class="ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html{:lang => "en"}
+  / <![endif]
   %head
     %title Welcome | Notable Solutions, Inc.
     %meta{:charset => "utf-8"}
@@ -156,71 +158,76 @@
 
         %section#hero
           %section.content.container
-            %ul.slides
-              %li
-                %a{:href => "http://www.nsimobile.com"}
-                  %img{:alt => "Front Panel Simulator", :src => "http://ricoh.nsiautostore.com/files/2012/02/ricoh-splash.png"}/
-                .heroSlideText
-                  %strong
-                    %span.line1.large NSi AutoStore Simulator
-                    %span.line2.extra-small
-                      For
-                      .symbol.trademark
-                    %span.line3
-                      %img{:src => "http://ricoh.nsiautostore.com/files/2012/02/nsi-logo-ricoh.png"}
-                    %span.line4.large
-                      MFPs
-                  %a.btn.blue{:href => "http://simulator.nsiautostore.com/category/brands/ricoh/"} Learn More
+            .row-fluid
+              .span12
+                %ul.slides
+                  %li
+                    %a{:href => "http://www.nsimobile.com"}
+                      %img{:alt => "Front Panel Simulator", :src => "http://ricoh.nsiautostore.com/files/2012/02/ricoh-splash.png"}/
+                    .heroSlideText
+                      .content
+                        %span.line1.large NSi AutoStore Simulator
+                        %span.line2.extra-small
+                          For
+                          .symbol.trademark
+                        %span.line3
+                          %img{:src => "http://ricoh.nsiautostore.com/files/2012/02/nsi-logo-ricoh.png"}
+                        %span.line4.large
+                          MFPs
+                        %a.btn.blue{:href => "http://simulator.nsiautostore.com/category/brands/ricoh/"} Learn More
 
-            .slideButtons
-              %ul
-                %li.arrow
-                  %a.prevButton{:href => "#"}
-                    %i.icon-arrow-left
-                %li.circle
-                  %a.active.blue.hideText 1
-                %li.circle
-                  %a.hideText 2
-                %li.circle
-                  %a.hideText 3
-                %li.circle
-                  %a.hideText 4
-                %li.circle
-                  %a.hideText 5
-                %li.arrow
-                  %a.nextButton{:href => "#"}
-                    %i.icon-arrow-right
+                .slideButtons
+                  %ul
+                    %li.arrow
+                      %a.prevButton{:href => "#"}
+                        %i.icon-arrow-left
+                    %li.circle
+                      %a.active.blue.hideText 1
+                    %li.circle
+                      %a.hideText 2
+                    %li.circle
+                      %a.hideText 3
+                    %li.circle
+                      %a.hideText 4
+                    %li.circle
+                      %a.hideText 5
+                    %li.arrow
+                      %a.nextButton{:href => "#"}
+                        %i.icon-arrow-right
 
       %main#main
         %section#featured
           %section.content.container
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/BLI-Homepage-Tile-298x213px.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} BLI Winner!
-              %p NSi AutoStore earns BLI rating of 5 out of 5 - again!
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/Preflight-Homepage-Tiles-298x2131.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} Preflight Tool
-              %p Verify your AutoStore 5 config before upgrading to 6
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/eLearning-Homepage-Tiles-298x2131.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} Smarticket 6
-              %p Your document workflow assistant to improve efficiency, collaboration and personalization.
+            .row-fluid
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/BLI-Homepage-Tile-298x213px.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} BLI Winner!
+                %p NSi AutoStore earns BLI rating of 5 out of 5 - again!
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/Preflight-Homepage-Tiles-298x2131.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} Preflight Tool
+                %p Verify your AutoStore 5 config before upgrading to 6
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://ricoh.nsiautostore.com/files/2012/02/eLearning-Homepage-Tiles-298x2131.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} Smarticket 6
+                %p Your document workflow assistant to improve efficiency, collaboration and personalization.
         %section#twitterFeed
           %section.content.container
-            %a{:href => '#'}
-              .icon
-                %i.icon-social-twitter
-              %p Hey #NSiMobile users... just wanted to let you know Apple released iOS 6.1 yesterday and NSi Mobile works great as-is. No updates required!
+            .row-fluid
+              .span12
+                %a{:href => '#'}
+                  .icon
+                    %i.icon-social-twitter
+                  %p Hey #NSiMobile users... just wanted to let you know Apple released iOS 6.1 yesterday and NSi Mobile works great as-is. No updates required!
         %section#news
           %section.content.container
             %h1
@@ -297,7 +304,7 @@
               .sidebar.span4
                 .bucket
                   %h1 Connect With NSi
-                  .content
+                  .contents
                     .socialLinks
                       %a.youtube{:href => '#'}
                         %i.icon-social-youtube
@@ -318,7 +325,7 @@
                   %h1
                     %i.icon-social-rss
                     Forums
-                  .content
+                  .contents
                     %ul.feedLinks
                       %li
                         %a{:href => '#'}
@@ -339,7 +346,7 @@
                   %h1
                     %i.icon-social-rss
                     Knowledgebase
-                  .content
+                  .contents
                     %ul.feedLinks
                       %li
                         %a{:href => '#'}
@@ -452,7 +459,7 @@
                   %ul
                     %li
                       %a{:href => "#"} Overview
-        %section.map
+        %section#map
           %section.content.container
             .row-fluid
               .span12

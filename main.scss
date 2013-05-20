@@ -17,37 +17,31 @@ main#main {
         }
       }
 
-      .block + .block {
-        margin-left: 19px;
-      }
-
-      .block {
-        &.featured {
-          width: 298px;
-          height: auto;
+      .featured {
+        a {
           display: inline-block;
-          vertical-align: top;
+        }
 
-          h3 {
-            font-family: ProximaNovaSemibold;
-            font-size: 1.5em;
-            font-weight: 300;
+        h3 {
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+          font-size: 1.5em;
+          font-weight: 300;
 
-            a {
-              color: #000000;
+          a {
+            color: #000000;
+            line-height: 25px;
 
-              &:hover {
-                color: #b6121c;
-              }
+            &:hover {
+              color: #b6121c;
             }
           }
+        }
 
-          p {
-            font-family: ProximaNovaSemibold;
-            font-size: 1em;
-            color: #6f6f6f;
-            line-height: 1.7em;
-          }
+        p {
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+          font-size: 1em;
+          color: #6f6f6f;
+          line-height: 1.7em;
         }
       }
     }
@@ -87,7 +81,7 @@ main#main {
   #news {
     h1 {
       margin: 30px 0px 30px 0px;
-      font-family: ProximaNovaLight;
+      font-family: ProximaNovaLight, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       font-weight: 300;
       font-size: 2.5em;
 
@@ -103,7 +97,7 @@ main#main {
         margin: 0px;
         background-color: #ddecf6;
         border-bottom: 1px solid #b4d4e9;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         font-size: 1.5em;
         @include border-radius(10px 10px 0px 0px);
       }
@@ -123,7 +117,7 @@ main#main {
         width: auto;
         height: auto;
         display: inline-block;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
         .dateBox {
           margin: 0px;
@@ -145,12 +139,13 @@ main#main {
           .date {
             padding: 10px 0px 0px 0px;
             font-size: 2em;
-            font-family: ProximaNovaRegular;
+            font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           }
         }
 
         .textBox {
-          margin: 0px 0px 0px 10px;
+          margin: 0px;
+          padding: 0px 0px 0px 10px;
           width: 85%;
           display: inline-block;
           vertical-align: top;

@@ -6,7 +6,7 @@ main#sub {
       .title {
         margin: 40px 0px 40px 0px;
         color: #ffffff;
-        font-family: ProximaNovaSemibold;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         font-size: 2em;
         background-color: #161616;
         line-height: 35px;
@@ -28,7 +28,7 @@ main#sub {
 
         li {
           display: inline-block;
-          font-family: ProximaNovaSemibold;
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
           &.divider {
             margin: 0px 5px 0px 5px;
@@ -60,7 +60,7 @@ main#sub {
             margin: 0px;
           }
 
-          font-family: ProximaNovaRegular;
+          font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           margin: 25px 0px 0px 0px;
           line-height: 1.7em;
           font-weight: 300;

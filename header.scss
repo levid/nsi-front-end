@@ -20,6 +20,7 @@ header#header {
     // Menu styles
     .menu {
       width: auto;
+      height: auto;
       margin: 14px auto;
       padding: 10px 10px 10px 20px;
       background-color: #f9f9f9;
@@ -28,11 +29,13 @@ header#header {
 
       // Language Selector
       .languageSelect {
-        padding: 0px 5px 0px 0px;
+        width: 100px;
+        height: auto;
+        padding: 0px;
         display: inline-block;
 
         ul {
-          margin: 0px;
+          margin: 5px auto;
           list-style: none;
           text-align: left;
 
@@ -47,6 +50,10 @@ header#header {
                 display: inline-block;
                 color: #3c3c3c;
                 vertical-align: top;
+              }
+
+              .lang {
+                margin: 5px 0px 0px 0px;
               }
 
               i {
@@ -94,17 +101,16 @@ header#header {
     padding: 0px;
     width: 100%;
     height: auto;
-    display: block;
+    display: inline-block;
     background-color: #161616;
-    display: block;
 
     // This is the responsive container for the nav content
     .content {
-      height: 390px;
+      height: auto;
       position: relative;
       margin: 0px auto;
       padding: 0;
-      overflow: hidden;
+      display: block;
 
       ul {
         width: auto;
@@ -116,20 +122,25 @@ header#header {
 
       ul.slides {
         height: auto;
+        overflow: hidden;
 
         .heroSlideText {
           height: 100%;
-          position: absolute;
-          top: 0px;
-          font-family: ProximaNovaRegular;
+          font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           font-size: 1.3em;
-          padding-top: 110px;
-          padding-left: 29px;
-          padding-right: 60px;
+          padding: 0px;
           line-height: 1.3em;
           color: #ffffff;
           background: rgba(0,0,0,.15);
           text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+          top: 0px;
+          position: absolute;
+          display: table-cell;
+          vertical-align: middle;
+
+          .content {
+            padding: 110px 60px 0px 29px;
+          }
 
           a {
             margin: 10px 0px 0px 0px;
@@ -144,10 +155,10 @@ header#header {
             margin: 0px;
             padding: 0px;
             display: block;
-            font-family: ProximaNovaRegular;
+            font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
 
             &.bold {
-              font-family: ProximaNovaBold;
+              font-family: ProximaNovaBold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
             }
 
             &.large {
@@ -186,12 +197,13 @@ header#header {
 
       // Slide Buttons
       .slideButtons {
-        margin: -40px auto;
-        width: auto;
+        margin: -20px auto;
+        width: 100%;
         height: auto;
-        display: block;
+        display: inline-block;
         position: relative;
         text-align: center;
+        bottom: 20px;
 
         // Circle Buttons
         ul {
@@ -230,6 +242,7 @@ header#header {
             float: left;
 
             a {
+              margin: 2px 0 0 0;
               width: 15px;
               height: 15px;
               display: inline-block;

@@ -1,9 +1,11 @@
 !!!
-/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
-/[if IE 8] <html class="no-js lt-ie9">
-/[if gt IE 8]  <html class="no-js">
-%html
+/[if lt IE 7 ] <html lang="en" class="ie6">
+/[if IE 7 ] <html lang="en" class="ie7">
+/[if IE 8 ] <html lang="en" class="ie8">
+/[if IE 9 ] <html lang="en" class="ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html{:lang => "en"}
+  / <![endif]
   %head
     %title Welcome | Notable Solutions, Inc.
     %meta{:charset => "utf-8"}
@@ -224,64 +226,67 @@
                         %a{:href => "#"} NSi Core Values
         %section#hero
           %section.content.container
-            %ul.slides
-              %li
-                %a{:href => "http://www.nsimobile.com"}
-                  %img{:alt => "Nsi Mobile", :src => "http://www.nsiautostore.com/files/2011/10/Home-page4.jpg"}/
-                .heroSlideText
-                  %strong
-                    %span.line1.medium Introducing
-                    %span.line2.large.bold
-                      NSi
-                      .symbol.trademark &#153;
-                      Mobile
-                      .symbol.trademark &#153;
-                    %span.line3.extra-small At Your Fingertips
-                  %a.btn.red{:href => "http://www.nsimobile.com"} Learn More
+            .row-fluid
+              .span12
+                %ul.slides
+                  %li
+                    %a{:href => "http://www.nsimobile.com"}
+                      %img{:alt => "Nsi Mobile", :src => "http://www.nsiautostore.com/files/2011/10/Home-page4.jpg"}/
+                    .heroSlideText
+                      .content
+                        %span.line1.medium Introducing
+                        %span.line2.large.bold
+                          NSi
+                          .symbol.trademark &#153;
+                          Mobile
+                          .symbol.trademark &#153;
+                        %span.line3.extra-small At Your Fingertips
+                        %a.btn.red{:href => "http://www.nsimobile.com"} Learn More
 
-            .slideButtons
-              %ul
-                %li.arrow
-                  %a.prevButton{:href => "#"}
-                    %i.icon-arrow-left
-                %li.circle
-                  %a.active.red.hideText 1
-                %li.circle
-                  %a.hideText 2
-                %li.circle
-                  %a.hideText 3
-                %li.circle
-                  %a.hideText 4
-                %li.circle
-                  %a.hideText 5
-                %li.arrow
-                  %a.nextButton{:href => "#"}
-                    %i.icon-arrow-right
+                .slideButtons
+                  %ul
+                    %li.arrow
+                      %a.prevButton{:href => "#"}
+                        %i.icon-arrow-left
+                    %li.circle
+                      %a.active.red.hideText 1
+                    %li.circle
+                      %a.hideText 2
+                    %li.circle
+                      %a.hideText 3
+                    %li.circle
+                      %a.hideText 4
+                    %li.circle
+                      %a.hideText 5
+                    %li.arrow
+                      %a.nextButton{:href => "#"}
+                        %i.icon-arrow-right
 
       %main#main
         %section#featured
           %section.content.container
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://www.nsiautostore.com/files/2013/03/Webcapture-home-page-cta.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} NSi EMEA Roadshow 2013
-              %p Visit us on the  NSi Europe Roadshow in April 2013: Mastering the Document Flood.
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://www.nsiautostore.com/files/2011/10/promo-whatsnew1.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} eLearning
-              %p Your shortcut to product expertise. Get trained on the latest without leaving your desk.
-            .block.featured
-              .image
-                %a{:href => "#"}
-                  %img.rounded{:src => "http://www.nsiautostore.com/files/2011/10/Smarticket-home-page-cta.jpg", :alt => "image"}
-              %h3
-                %a{:href => '#'} Smarticket 6
-              %p Your document workflow assistant to improve efficiency, collaboration and personalization.
+            .row-fluid
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://www.nsiautostore.com/files/2013/03/Webcapture-home-page-cta.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} NSi EMEA Roadshow 2013
+                %p Visit us on the  NSi Europe Roadshow in April 2013: Mastering the Document Flood.
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://www.nsiautostore.com/files/2011/10/promo-whatsnew1.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} eLearning
+                %p Your shortcut to product expertise. Get trained on the latest without leaving your desk.
+              .span4.featured
+                .image
+                  %a{:href => "#"}
+                    %img.rounded{:src => "http://www.nsiautostore.com/files/2011/10/Smarticket-home-page-cta.jpg", :alt => "image"}
+                %h3
+                  %a{:href => '#'} Smarticket 6
+                %p Your document workflow assistant to improve efficiency, collaboration and personalization.
         %section#news
           %section.content.container
             %h1
@@ -336,7 +341,7 @@
               .sidebar.span4
                 .bucket
                   %h1 Customer Success Stories
-                  .content
+                  .contents
                     .featured
                       %img{:src => "http://www.nsiautostore.com/files/2012/10/Toyota_Success_Story_Image_940x260.jpg", :alt => "Toyota Industries of North America Makes Paper Documents Disappear", :width => "300", :height => "120"}
                       %p
@@ -357,7 +362,7 @@
 
                 .bucket
                   %h1 Connect With NSi
-                  .content
+                  .contents
                     .socialLinks
                       %a.youtube{:href => '#'}
                         %i.icon-social-youtube
@@ -369,9 +374,9 @@
                         %i.icon-social-facebook
                       %a.rss{:href => '#'}
                         %i.icon-social-rss
-                  .footer.row-fluid
+                  .footer
                     %p Get NSi news delivered to your inbox
-                    %input#mce-email.email.span7{:name => "email", :placeholder => "enter email address", :required => "", :type => "email", :value => ""}
+                    %input#mce-email.email{:name => "email", :placeholder => "enter email address", :required => "", :type => "email", :value => ""}
                     %input#mc-subscribe.btn.black{:name => "subscribe", :type => "submit", :value => "Join"}
 
 

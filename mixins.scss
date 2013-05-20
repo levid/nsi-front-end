@@ -82,13 +82,14 @@ $path: "../img/";
   -moz-background-size: $val;
   -o-background-size: $val;
   background-size: $val;
+  behavior: url(pie/PIE.htc); // This enables CSS3 in IE 6-9
 }
 
 @mixin transform ($val: -90deg)
 {
-  -webkit-transform: rotate($val); 
-  -moz-transform: rotate($val); 
-  -o-transform: rotate($val); 
+  -webkit-transform: rotate($val);
+  -moz-transform: rotate($val);
+  -o-transform: rotate($val);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$val); //For IE support
 }
 
@@ -109,6 +110,7 @@ $path: "../img/";
   -ms-transition: $val;
   -o-transition: $val;
   transition: $val;
+  behavior: url(pie/PIE.htc); // This enables CSS3 in IE 6-9
 }
 
 // box-shadow
@@ -196,6 +198,7 @@ $path: "../img/";
   -ms-border-radius: $val;
   -o-border-radius: $val;
   border-radius: $val;
+  behavior: url(pie/PIE.htc); // This enables CSS3 in IE 6-9
 }
 
 @mixin border-radius-important ($val: none)
@@ -224,6 +227,7 @@ $path: "../img/";
   -ms-transition: $val;
   -o-transition: $val;
   transition: $val;
+  behavior: url(pie/PIE.htc); // This enables CSS3 in IE 6-9
 }
 
 // opacity
@@ -234,6 +238,7 @@ $path: "../img/";
   -khtml-opacity: $val / 100;
   -moz-opacity: $val / 100;
   opacity: $val / 100;
+  behavior: url(pie/PIE.htc); // This enables CSS3 in IE 6-9
 }
 
 @mixin grey-box {
@@ -254,8 +259,8 @@ $path: "../img/";
   background-image: -moz-gradient(center top, $top 0%, $bottom 100%)  !important;
   background-image: -o-linear-gradient(top, $top 0%, $bottom 100%) !important;
   background-image: -ms-linear-gradient(top, $top 0%, $bottom 100%) !important;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{ie-hex-str($top)}', endColorstr='#{ie-hex-str($bottom)}');" !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{ie-hex-str($top)}', endColorstr='#{ie-hex-str($bottom)}') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$top}', endColorstr='#{$bottom}');";
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#{$top}', endColorstr='#{$bottom}');
   zoom: 1 !important;
 }
 
