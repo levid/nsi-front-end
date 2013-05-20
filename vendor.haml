@@ -8,8 +8,8 @@
   / <![endif]
   %head
     %title Welcome | Notable Solutions, Inc.
-    %meta{:charset => "utf-8"}
-    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:"http-equiv" => "Content-Type", :content => "text/html;charset=utf-8"}
+
     %meta{:name => "description", :content => ""}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"}
     %link{:href => "favicon.jpg", :rel => "icon", :type => "image/jpeg"}
@@ -49,7 +49,7 @@
             .menu.pull-right
               .languageSelect
                 %ul
-                  %li.dropdown.active.blue{:language => "english"}
+                  %li.dropdown.active.blue
                     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                       %p English
                       .lang.en
@@ -83,7 +83,7 @@
 
             .logo.pull-left
               %a{:href => '#'}
-                %img{:src => 'img/vendor-logo.png'}
+                %img{:src => 'img/vendor-logo.png', :alt => ''}
 
         %nav#subNav.navbar
           %section.content.container
@@ -166,13 +166,13 @@
                       %img{:alt => "Front Panel Simulator", :src => "http://ricoh.nsiautostore.com/files/2012/02/ricoh-splash.png"}/
                     .heroSlideText
                       .content
-                        %span.line1.large NSi AutoStore Simulator
-                        %span.line2.extra-small
+                        .line1.large NSi AutoStore Simulator
+                        .line2.extra-small
                           For
                           .symbol.trademark
-                        %span.line3
-                          %img{:src => "http://ricoh.nsiautostore.com/files/2012/02/nsi-logo-ricoh.png"}
-                        %span.line4.large
+                        .line3
+                          %img{:src => "http://ricoh.nsiautostore.com/files/2012/02/nsi-logo-ricoh.png", :alt => ''}
+                        .line4.large
                           MFPs
                         %a.btn.blue{:href => "http://simulator.nsiautostore.com/category/brands/ricoh/"} Learn More
 
@@ -269,7 +269,8 @@
                         %a{:href => '#'} Update to Xerox EIP Devices Supported by AutoStore
                       %p
                         Today, NSi announced support for the following Xerox devices: WorkCentre&trade; 5845/5855 WorkCentre&trade; 5865/5875/5890 WorkCentr&trade; 7830/7835/7845/7855 ColorQube&trade; 8700
-                        %br Please see...
+                        %br
+                        Please see...
                   %li
                     .dateBox
                       .title Mar
@@ -464,7 +465,7 @@
             .row-fluid
               .span12
                 .map
-                  %img{:src => "img/map.jpg"}
+                  %img{:src => "img/map.jpg", :alt => ''}
                 %ul.locations
                   %li
                     North America
@@ -490,7 +491,7 @@
               .span2
                 .languageSelect.pull-right
                   %ul
-                    %li.dropdown.dropup.active{:language => "english"}
+                    %li.dropdown.dropup.active
                       %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
                         %p English
                         .lang.en
