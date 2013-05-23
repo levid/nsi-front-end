@@ -34,7 +34,7 @@ a, button, i {
     behavior: url(pie/PIE.htc); }
 
 html, button, input, select, textarea, p {
-  font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   outline: none !important; }
 
 input[type=text] {
@@ -60,14 +60,18 @@ body {
   white-space: nowrap;
   overflow: hidden; }
 
+.hide {
+  display: none; }
+
 .symbol {
   display: inline-block; }
   .symbol.trademark {
-    margin-left: -10px;
-    top: 4px;
+    left: -5px;
+    top: -4px;
     vertical-align: super;
     position: relative;
-    font-size: .7em; }
+    font-size: .7em;
+    display: inline; }
 
 .align.right {
   text-align: right; }
@@ -76,7 +80,7 @@ body {
 
 .socialLinks .text {
   margin: 0px 0px 10px 0px;
-  font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   font-size: 1.5em; }
 .socialLinks a {
   width: auto;
@@ -116,7 +120,7 @@ body {
     display: inline-block; }
 
 .lang {
-  width: 24px;
+  width: 18px;
   height: 12px; }
   .lang.en {
     background-color: transparent;
@@ -145,18 +149,17 @@ body {
     background-repeat: no-repeat; }
 
 .searchBox {
+  width: auto;
+  height: auto;
   display: inline-block; }
   .searchBox form {
     margin: 0px;
     padding: 0px;
-    height: auto; }
-  .searchBox input {
-    margin: 0px;
-    padding: 15px 8px 15px 8px;
-    color: #7d7d7d;
-    font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    font-size: 1em;
+    height: auto;
+    width: auto;
+    display: inline-block;
     border: 1px solid #dedede;
+    background-color: #ffffff;
     -webkit-border-radius: 7px;
     -khtml-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -164,8 +167,21 @@ body {
     -o-border-radius: 7px;
     border-radius: 7px;
     behavior: url(pie/PIE.htc); }
+  .searchBox input {
+    width: 150px;
+    margin: 0px;
+    padding: 15px 8px 15px 8px;
+    color: #7d7d7d;
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    font-size: 1em;
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; }
   .searchBox a, .searchBox button {
-    margin: 8px 0px 0px -15px;
+    margin: 5px 0px 0px 0px;
     border: none;
     outline: none;
     vertical-align: top;
@@ -175,11 +191,9 @@ body {
     right: 10px;
     z-index: 5; }
 
-.sidebar .bucket + .bucket {
-  margin-top: 20px; }
 .sidebar .bucket {
   min-width: 250px;
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -188,12 +202,14 @@ body {
   border-radius: 10px;
   behavior: url(pie/PIE.htc);
   border: 1px solid #ebebeb; }
+  .sidebar .bucket:nth-child(1) {
+    margin-top: 0px; }
   .sidebar .bucket h1 {
     padding: 0px 10px 0px 10px;
     margin: 0px;
     background-color: #ddecf6;
     border-bottom: 1px solid #b4d4e9;
-    font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: 1.5em;
     font-weight: 300;
     -webkit-border-radius: 10px 10px 0px 0px;
@@ -215,18 +231,27 @@ body {
       behavior: url(pie/PIE.htc); }
     .sidebar .bucket .contents p {
       margin: 10px 0px 10px 0px;
-      font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       color: #6f6f6f; }
     .sidebar .bucket .contents .featured {
       padding: 20px; }
     .sidebar .bucket .contents .socialLinks {
+      width: auto;
+      height: auto;
       padding: 10px;
-      border-bottom: 1px solid #e7e7e7; }
+      border-bottom: 1px solid #e7e7e7;
+      display: inline-block; }
       .sidebar .bucket .contents .socialLinks a {
         width: auto;
+        min-width: 42px;
         height: auto;
         font-size: 3em;
         display: inline-block; }
+        .sidebar .bucket .contents .socialLinks a i {
+          width: auto;
+          min-width: 42px;
+          height: auto;
+          display: inline-block; }
     .sidebar .bucket .contents ul.feedLinks {
       margin: 0px;
       padding: 0px;
@@ -246,9 +271,9 @@ body {
           border-radius: 0px 0px 10px 10px;
           behavior: url(pie/PIE.htc); }
         .sidebar .bucket .contents ul.feedLinks li .title {
-          font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
         .sidebar .bucket .contents ul.feedLinks li .date {
-          font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           color: #6f6f6f; }
         .sidebar .bucket .contents ul.feedLinks li a {
           width: 100%;
@@ -261,7 +286,7 @@ body {
           width: 100%;
           height: 100%;
           border: none;
-          font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           text-transform: uppercase;
           display: inline-block;
           color: #000000; }
@@ -284,7 +309,7 @@ body {
       margin-left: 5px; }
     .sidebar .bucket ul.pages li {
       float: left;
-      font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       font-weight: 300; }
       .sidebar .bucket ul.pages li a {
         width: auto;
@@ -367,7 +392,7 @@ a.readMore {
       color: #666666; }
 
 .btn {
-  font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   font-size: 1em; }
   .btn.blue {
     color: #ffffff;
@@ -490,7 +515,12 @@ a.readMore {
 @font-face {
   font-family: 'SocialIcons';
   src: url("fonts/SocialIcons.eot");
-  src: url("fonts/SocialIcons.eot?#iefix") format("embedded-opentype"), url("fonts/SocialIcons.woff") format("woff"), url("fonts/SocialIcons.ttf") format("truetype"), url("fonts/SocialIcons.svg#SocialIcons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SocialIcons';
+  src: url("fonts/SocialIcons.woff") format("woff"), url("fonts/SocialIcons.ttf") format("truetype"), url("fonts/SocialIcons.svg#SocialIcons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -610,7 +640,7 @@ header#header {
       behavior: url(pie/PIE.htc);
       display: inline-block; }
       header#header nav#topNav .menu .languageSelect {
-        width: 100px;
+        width: 90px;
         height: auto;
         padding: 0px;
         display: inline-block; }
@@ -620,15 +650,19 @@ header#header {
           text-align: left; }
           header#header nav#topNav .menu .languageSelect ul li div {
             display: inline-block; }
-          header#header nav#topNav .menu .languageSelect ul li a p {
-            margin: 0px;
-            display: inline-block;
-            color: #3c3c3c;
-            vertical-align: top; }
-          header#header nav#topNav .menu .languageSelect ul li a .lang {
-            margin: 5px 0px 0px 0px; }
-          header#header nav#topNav .menu .languageSelect ul li a i {
-            color: #000000; }
+          header#header nav#topNav .menu .languageSelect ul li a {
+            margin: 0px 5px 0px 0px; }
+            header#header nav#topNav .menu .languageSelect ul li a p {
+              margin: 0px;
+              display: inline-block;
+              color: #3c3c3c;
+              vertical-align: top; }
+            header#header nav#topNav .menu .languageSelect ul li a .lang {
+              margin: 5px 0px 0px 0px; }
+            header#header nav#topNav .menu .languageSelect ul li a i {
+              color: #000000; }
+            header#header nav#topNav .menu .languageSelect ul li a b {
+              margin-left: 0px; }
   header#header nav#subNav {
     width: 100%;
     height: auto;
@@ -664,6 +698,7 @@ header#header {
         list-style: none; }
       header#header #hero .content ul.slides {
         height: auto;
+        width: auto;
         overflow: hidden; }
         header#header #hero .content ul.slides .heroSlideText {
           height: 100%;
@@ -675,6 +710,7 @@ header#header {
           background: rgba(0, 0, 0, 0.15);
           text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
           top: 0px;
+          left: 0px;
           position: absolute;
           display: table-cell;
           vertical-align: middle; }
@@ -685,33 +721,28 @@ header#header {
             text-transform: uppercase; }
             header#header #hero .content ul.slides .heroSlideText a.btn {
               padding: 10px 15px 10px 15px; }
-          header#header #hero .content ul.slides .heroSlideText span {
-            margin: 0px;
-            padding: 0px;
-            display: block;
-            font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
-            header#header #hero .content ul.slides .heroSlideText span.bold {
-              font-family: ProximaNovaBold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
-            header#header #hero .content ul.slides .heroSlideText span.large {
-              font-size: 2em; }
-            header#header #hero .content ul.slides .heroSlideText span.medium {
-              font-size: 1.5em; }
-            header#header #hero .content ul.slides .heroSlideText span.small {
-              font-size: 1.1em; }
-            header#header #hero .content ul.slides .heroSlideText span.extra-small {
-              font-size: 0.8em; }
-            header#header #hero .content ul.slides .heroSlideText span.line2 {
-              margin: 5px 0px 0px 0px; }
-            header#header #hero .content ul.slides .heroSlideText span.line3 {
-              margin: 10px 0px 0px 0px; }
-            header#header #hero .content ul.slides .heroSlideText span.line4 {
-              margin: 15px 0px 0px 0px; }
+          header#header #hero .content ul.slides .heroSlideText .bold {
+            font-family: ProximaNovaBold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
+          header#header #hero .content ul.slides .heroSlideText .large {
+            font-size: 2em; }
+          header#header #hero .content ul.slides .heroSlideText .medium {
+            font-size: 1.5em; }
+          header#header #hero .content ul.slides .heroSlideText .small {
+            font-size: 1.1em; }
+          header#header #hero .content ul.slides .heroSlideText .extra-small {
+            font-size: 0.8em; }
+          header#header #hero .content ul.slides .heroSlideText .line2 {
+            margin: 10px 0px 0px 0px; }
+          header#header #hero .content ul.slides .heroSlideText .line3 {
+            margin: 10px 0px 0px 0px; }
+          header#header #hero .content ul.slides .heroSlideText .line4 {
+            margin: 15px 0px 0px 0px; }
       header#header #hero .content .slideButtons {
-        margin: -20px auto;
+        margin: 0px auto;
         width: 100%;
         height: auto;
         display: inline-block;
-        position: relative;
+        position: absolute;
         text-align: center;
         bottom: 20px; }
         header#header #hero .content .slideButtons ul {
@@ -725,23 +756,28 @@ header#header {
             margin: 0 0 0 10px; }
           header#header #hero .content .slideButtons ul li.arrow {
             width: auto;
-            float: left; }
+            display: inline-block; }
             header#header #hero .content .slideButtons ul li.arrow a.prevButton, header#header #hero .content .slideButtons ul li.arrow a.nextButton {
               width: auto;
               height: auto;
               display: inline-block;
+              color: #ffffff;
               color: rgba(255, 255, 255, 0.5);
               font-size: 20px; }
               header#header #hero .content .slideButtons ul li.arrow a.prevButton:hover, header#header #hero .content .slideButtons ul li.arrow a.nextButton:hover {
                 color: #ffffff; }
           header#header #hero .content .slideButtons ul li.circle {
-            width: auto;
-            float: left; }
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 10; }
             header#header #hero .content .slideButtons ul li.circle a {
               margin: 2px 0 0 0;
               width: 15px;
               height: 15px;
               display: inline-block;
+              background-color: #ffffff;
               background-color: rgba(255, 255, 255, 0.5);
               -webkit-border-radius: 50px;
               -khtml-border-radius: 50px;
@@ -751,8 +787,11 @@ header#header {
               border-radius: 50px;
               behavior: url(pie/PIE.htc);
               cursor: pointer;
-              border: 2px solid rgba(255, 255, 255, 0); }
+              border: 2px solid #ffffff;
+              border: 2px solid rgba(255, 255, 255, 0);
+              z-index: 10; }
               header#header #hero .content .slideButtons ul li.circle a:hover {
+                background-color: #ffffff;
                 background-color: rgba(255, 255, 255, 0.9); }
               header#header #hero .content .slideButtons ul li.circle a.active {
                 border: 2px solid #ffffff; }
@@ -801,14 +840,14 @@ footer#footer {
         footer#footer .information .content ul.links li a {
           color: #6f6f6f;
           font-size: 0.9em;
-          font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
           footer#footer .information .content ul.links li a:hover {
             color: #000000; }
       footer#footer .information .content .location {
         height: auto;
         display: inline-block;
         vertical-align: top;
-        font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
         footer#footer .information .content .location h4 {
           font-size: 1.3em; }
         footer#footer .information .content .location p {
@@ -820,7 +859,7 @@ footer#footer {
         width: auto;
         display: inline-block;
         vertical-align: top;
-        font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
         footer#footer .information .content .links h4 {
           font-size: 1em; }
         footer#footer .information .content .links p {
@@ -858,7 +897,7 @@ footer#footer {
           footer#footer .information .content .contactButton a:hover {
             background-color: #d4d4d4; }
         footer#footer .information .content .contactButton p {
-          font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+          font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
           margin: 15px 0px 0px 0px;
           font-size: .9em; }
   footer#footer #map {
@@ -875,7 +914,7 @@ footer#footer {
       footer#footer #map ul.locations li + li {
         margin-left: 10px; }
       footer#footer #map ul.locations li {
-        font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
         font-size: 1.2em;
         display: inline-block;
         color: #6f6f6f; }
@@ -887,7 +926,7 @@ footer#footer {
     min-height: 54px;
     background-color: #3c3c3c; }
     footer#footer .copyright p {
-      font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       margin: 17px 0px 0px 0px;
       color: #bfbfbf; }
     footer#footer .copyright .languageSelect {
@@ -934,19 +973,19 @@ main#main #featured {
   main#main #featured .content {
     padding: 20px 0px 20px 0px; }
     main#main #featured .content .image {
-      display: inline-block; }
-      main#main #featured .content .image img.rounded {
-        -webkit-border-radius: 10px;
-        -khtml-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        border-radius: 10px;
-        behavior: url(pie/PIE.htc); }
+      display: inline-block;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      behavior: url(pie/PIE.htc);
+      overflow: hidden; }
     main#main #featured .content .featured a {
       display: inline-block; }
     main#main #featured .content .featured h3 {
-      font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       font-size: 1.5em;
       font-weight: 300; }
       main#main #featured .content .featured h3 a {
@@ -955,7 +994,7 @@ main#main #featured {
         main#main #featured .content .featured h3 a:hover {
           color: #b6121c; }
     main#main #featured .content .featured p {
-      font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
       font-size: 1em;
       color: #6f6f6f;
       line-height: 1.7em; }
@@ -991,7 +1030,7 @@ main#main #news .bucket h1 {
   margin: 0px;
   background-color: #ddecf6;
   border-bottom: 1px solid #b4d4e9;
-  font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
   font-size: 1.5em;
   -webkit-border-radius: 10px 10px 0px 0px;
   -khtml-border-radius: 10px 10px 0px 0px;
@@ -1004,18 +1043,19 @@ main#main #news ul.newsItems {
   margin: 10px 0px 0px 0px;
   padding: 0px;
   list-style: none;
-  display: inline-block; }
+  display: table-cell; }
   main#main #news ul.newsItems li + li {
     margin-top: 40px; }
   main#main #news ul.newsItems li {
     width: auto;
     height: auto;
     display: inline-block;
-    font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
     main#main #news ul.newsItems li .dateBox {
       margin: 0px;
       width: 50px;
-      height: 63px;
+      height: auto;
+      min-height: 60px;
       background-color: #323537;
       -webkit-border-radius: 10px;
       -khtml-border-radius: 10px;
@@ -1039,9 +1079,13 @@ main#main #news ul.newsItems {
         border-radius: 10px 10px 0px 0px;
         behavior: url(pie/PIE.htc); }
       main#main #news ul.newsItems li .dateBox .date {
-        padding: 10px 0px 0px 0px;
+        margin: 9px 0px 0px 0px;
+        width: auto;
+        height: auto;
+        padding: 0px;
         font-size: 2em;
-        font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
+        font-family: ProximaNovaRegular, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+        display: inline-block; }
     main#main #news ul.newsItems li .textBox {
       margin: 0px;
       padding: 0px 0px 0px 10px;
@@ -1071,10 +1115,20 @@ main#sub section#subTitle {
   main#sub section#subTitle .content .title {
     margin: 40px 0px 40px 0px;
     color: #ffffff;
-    font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
     font-size: 2em;
     background-color: #161616;
     line-height: 35px; }
+  main#sub section#subTitle .content .image {
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    behavior: url(pie/PIE.htc);
+    overflow: hidden;
+    margin: 10px 0px 10px 0px; }
 main#sub section#breadcrumb {
   background-color: #f4f2f2;
   border-bottom: 1px solid #e7e7e7; }
@@ -1086,7 +1140,7 @@ main#sub section#breadcrumb {
       list-style: none; }
       main#sub section#breadcrumb .content ul li {
         display: inline-block;
-        font-family: ProximaNovaSemibold, "Helvetica Neue", Helvetica, Arial, Sans-Serif; }
+        font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
         main#sub section#breadcrumb .content ul li.divider {
           margin: 0px 5px 0px 5px;
           color: #cccccc; }

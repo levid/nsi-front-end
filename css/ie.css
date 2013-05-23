@@ -1,0 +1,37 @@
+/* Mixins and Supportive Variables */
+.ie7 .searchBox input, .ie8 .searchBox input, .ie9 .searchBox input {
+  padding: 0px 0px 0px 5px; }
+.ie7 .searchBox a, .ie7 .searchBox button, .ie8 .searchBox a, .ie8 .searchBox button, .ie9 .searchBox a, .ie9 .searchBox button {
+  margin: 2px auto; }
+.ie7 .sidebar .bucket .contents .searchBox form, .ie8 .sidebar .bucket .contents .searchBox form, .ie9 .sidebar .bucket .contents .searchBox form {
+  -webkit-border-radius: none;
+  -khtml-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  behavior: url(pie/PIE.htc); }
+.ie7 .sidebar .bucket + .bucket, .ie8 .sidebar .bucket + .bucket, .ie9 .sidebar .bucket + .bucket {
+  margin-top: 20px; }
+.ie7 .sidebar .bucket .footer input.email, .ie8 .sidebar .bucket .footer input.email, .ie9 .sidebar .bucket .footer input.email {
+  padding: 0px 0px 0px 5px; }
+.ie7 main#main #news ul.newsItems li .dateBox .date, .ie8 main#main #news ul.newsItems li .dateBox .date, .ie9 main#main #news ul.newsItems li .dateBox .date {
+  padding: 0px 0px 10px 0px;
+  line-height: 30px; }
+.ie7 .symbol, .ie8 .symbol, .ie9 .symbol {
+  display: inline-block; }
+  .ie7 .symbol.trademark, .ie8 .symbol.trademark, .ie9 .symbol.trademark {
+    left: -5px;
+    top: 5px;
+    vertical-align: super;
+    position: relative;
+    font-size: .7em;
+    display: inline; }
+.ie7 .sidebar .bucket .contents img, .ie8 .sidebar .bucket .contents img, .ie9 .sidebar .bucket .contents img {
+  -webkit-border-radius: none;
+  -khtml-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  behavior: url(pie/PIE.htc); }

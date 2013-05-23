@@ -11,6 +11,12 @@ main#sub {
         background-color: #161616;
         line-height: 35px;
       }
+
+      .image {
+        @include border-radius(10px);
+        overflow: hidden;
+        margin: 10px 0px 10px 0px;
+      }
     }
   }
 

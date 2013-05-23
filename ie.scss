@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import "mixins";
+
+.ie7, .ie8, .ie9 {
+  .searchBox {
+    input {
+      padding: 0px 0px 0px 5px;
+    }
+
+    a, button {
+      margin: 2px auto;
+    }
+  }
+
+  .sidebar .bucket .contents {
+    .searchBox {
+      form {
+        @include border-radius(none);
+      }
+    }
+  }
+
+  .sidebar {
+    .bucket + .bucket {
+      margin-top: 20px;
+    }
+
+    .bucket .footer input.email {
+      padding: 0px 0px 0px 5px;
+    }
+  }
+
+  main#main {
+    #news {
+      ul.newsItems li {
+        .dateBox {
+          .date {
+            padding: 0px 0px 10px 0px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .symbol {
+    display: inline-block;
+    &.trademark {
+      left: -5px;
+      top: 5px;
+      vertical-align: super;
+      position: relative;
+      font-size: .7em;
+      display: inline;
+    }
+  }
+
+  .sidebar .bucket .contents {
+    img {
+      @include border-radius(none);
+    }
+  }
+}

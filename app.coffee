@@ -20,12 +20,11 @@ class NSI
 
     # console.log "---Instantiating App---"
 
-    # $("ul.nav li.dropdown").hover (->
-    #   # $(this).find(".dropdown-menu:first-child").stop(true, true).show()
-    #   $(this).addClass "open"
-    # ), ->
-    #   # $(this).find(".dropdown-menu:first-child").stop(true, true).hide()
-    #   $(this).removeClass "open"
+    # Disable clicking to activate bootstrap dropdowns. Otherwise there will be a duplicate
+    $("ul.nav li.dropdown").hover (->
+      $(this).addClass "open"
+    ), ->
+      $(this).removeClass "open"
 
 
     # $(window).load ->
