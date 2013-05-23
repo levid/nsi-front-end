@@ -1152,6 +1152,12 @@ main#sub section#subContent {
   padding: 25px 0px 0px 0px; }
   main#sub section#subContent .content {
     margin: 0px auto 0px auto; }
+    main#sub section#subContent .content .title {
+      margin: 0px 0px 20px 0px;
+      color: #000000;
+      font-family: ProximaNovaSemibold, 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+      font-size: 2em;
+      line-height: 35px; }
     main#sub section#subContent .content .bodyText {
       padding: 0px 0px 40px 0px; }
       main#sub section#subContent .content .bodyText p {
